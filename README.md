@@ -36,7 +36,7 @@ git push
 
 ### Output
 
-The generated PDF will be available as `Onur_Ravli_Resume.pdf` in the repository root. You can find the latest version [here](./Onur_Ravli_Resume.pdf). (You can change to your name from [action file](./.github/workflows/tex-to-pdf.yml))
+The generated PDF will be available as `Onur_Ravli_Resume.pdf` in the repository root. You can find the latest version [here](./Update_Umut_Resume.pdf). (You can change to your name from [action file](./.github/workflows/tex-to-pdf.yml))
 
 ### License
 
