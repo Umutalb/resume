@@ -56,4 +56,4 @@ jobs:
           # Commit and push to target repository
           git add public/Update_Umut_Resume.pdf
           git commit -m "docs: update resume from automated build" || echo "No changes to commit"
-          git push https://${{ github.actor }}:${PAT_TOKEN}@github.com/Umutalb/Umutalb-com.git master
+          git push https://${{ github.actor }}:${PAT_TOKEN}@github.com/Umutalb/Umutalb-com.git main
