@@ -23,7 +23,7 @@ jobs:
 
       - name: Compile LaTeX to PDF
         run: |
-          pdflatex -jobname=Onur_Ravli_Resume resume.tex
+          pdflatex -jobname=Update_Umut_Resume resume.tex
 
       - name: Commit and push PDF
         env:
@@ -35,7 +35,7 @@ jobs:
           git commit -m "docs: update resume" || echo "No changes to commit"
           git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
 
-      - name: Push PDFs to onurravli-com repository
+      - name: Push PDFs to umutalbayrak-dev repository
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
@@ -54,6 +54,6 @@ jobs:
           cp ../Onur_Ravli_Resume.pdf public/Onur_Ravli_Resume.pdf
 
           # Commit and push to target repository
-          git add public/Onur_Ravli_Resume.pdf
+          git add public/Update_Umut_Resume.pdf
           git commit -m "docs: update resume from automated build" || echo "No changes to commit"
-          git push https://${{ github.actor }}:${PAT_TOKEN}@github.com/onurravli/onurravli-com.git master
+          git push https://${{ github.actor }}:${PAT_TOKEN}@github.com/onurravli/umutalbayrak-dev.git master
