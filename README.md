@@ -12,7 +12,7 @@ This repository contains my resume in LaTeX. Every time a push is made, the PDF 
 1. Clone the repository.
 
 ```bash
-git clone https://github.com/onurravli/resume.git
+git clone https://github.com/Umutalb/resume.git
 cd resume
 ```
 
@@ -36,7 +36,7 @@ git push
 
 ### Output
 
-The generated PDF will be available as `Onur_Ravli_Resume.pdf` in the repository root. You can find the latest version [here](./Update_Umut_Resume.pdf). (You can change to your name from [action file](./.github/workflows/tex-to-pdf.yml))
+The generated PDF will be available as `Update_Umut_Resume.pdf` in the repository root. You can find the latest version [here](./Update_Umut_Resume.pdf). (You can change to your name from [action file](./.github/workflows/tex-to-pdf.yml))
 
 ### License
 
