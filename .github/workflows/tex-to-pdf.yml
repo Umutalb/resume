@@ -31,7 +31,7 @@ jobs:
         run: |
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git config --local user.name "${{ github.actor }}"
-          git add Onur_Ravli_Resume.pdf
+          git add Update_Umut_Resume.pdf
           git commit -m "docs: update resume" || echo "No changes to commit"
           git push https://${{ github.actor }}:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
 
@@ -44,16 +44,16 @@ jobs:
           git config --global user.name "${{ github.actor }}"
 
           # Clone the target repository using PAT
-          git clone https://${{ github.actor }}:${PAT_TOKEN}@github.com/onurravli/onurravli-com.git
-          cd onurravli-com
+          git clone https://${{ github.actor }}:${PAT_TOKEN}@github.com/Umutalb/Umutalb-com.git
+          cd Umutalb-com
 
           # Create public folder if it doesn't exist
           mkdir -p public
 
           # Copy PDFs to public folder
-          cp ../Onur_Ravli_Resume.pdf public/Onur_Ravli_Resume.pdf
+          cp ../Update_Umut_Resume.pdf public/Update_Umut_Resume.pdf
 
           # Commit and push to target repository
           git add public/Update_Umut_Resume.pdf
           git commit -m "docs: update resume from automated build" || echo "No changes to commit"
-          git push https://${{ github.actor }}:${PAT_TOKEN}@github.com/onurravli/umutalbayrak-dev.git master
+          git push https://${{ github.actor }}:${PAT_TOKEN}@github.com/Umutalb/Umutalb-com.git master
