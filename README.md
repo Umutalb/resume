@@ -38,6 +38,11 @@ git push
 
 The generated PDF will be available as `Update_Umut_Resume.pdf` in the repository root. You can find the latest version [here](./Update_Umut_Resume.pdf). (You can change to your name from [action file](./.github/workflows/tex-to-pdf.yml))
 
+Note:
+If you don’t want the generated CV to be deployed to your website, you can remove the related lines from the workflow file (from line 22 onwards).  
+If you do want it deployed, make sure to add a `PAT_TOKEN` in your repository’s Actions secrets.
+
+
 ### License
 
 This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
